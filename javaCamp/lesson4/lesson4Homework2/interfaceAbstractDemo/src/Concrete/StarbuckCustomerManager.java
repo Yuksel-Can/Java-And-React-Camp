@@ -14,24 +14,14 @@ public class StarbuckCustomerManager extends BaseCustomerManager {
 		this.customerCheckService = customerCheckService;
 	}
 	@Override
-	public void save(Customer customer) {
-		try {
+	public void save(Customer customer) throws RemoteException{
 			if(customerCheckService.CheckIfRealPerson(customer)) {
-				save(customer);
-				System.out.println("baþarýlý");
+				//save(customer);
+				System.out.println(customer.getFirstName() + " " + customer.getLastName() + " , veritabanýna baþarýyla eklendi");
+			}else {
+				System.out.println("Kayýt edilemedi.");
 			}
-		} catch (NumberFormatException e) {
-			// TODO Auto-generated catch block
-			System.out.println("baþarýsýz1");
-			e.printStackTrace();
-		} catch (RemoteException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			System.out.println("baþarýsýz2");
-		}
-		//throw new Exception("Not a valid person");
-		//CheckIfRealPerson(customer);
-		//System.out.println("Saved to db : " + customer.getFirstName());
+		
 	}
 
 }

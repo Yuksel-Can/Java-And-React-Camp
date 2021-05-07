@@ -1,5 +1,7 @@
 package interfaceAbstractDemo;
 
+import java.rmi.RemoteException;
+
 import Abstract.BaseCustomerManager;
 import Adapters.MernisServiceAdapter;
 import Concrete.NeroCustomerManager;
@@ -8,10 +10,10 @@ import Entities.Customer;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws RemoteException {
 
 		BaseCustomerManager customerManager = new StarbuckCustomerManager(new MernisServiceAdapter());
-		customerManager.save(new Customer(1,"mürsel", "özdemir","1976","10315032184"));
+		customerManager.save(new Customer(1,"Yüksel Can", "Özdemir","1998","12345678910"));
 
 	}
 
