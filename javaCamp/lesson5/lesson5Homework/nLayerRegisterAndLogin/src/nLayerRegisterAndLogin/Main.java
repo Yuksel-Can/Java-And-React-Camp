@@ -28,9 +28,9 @@ public class Main {
 		User user3 = new User(1, "Yüksel Can", "Özdemir", "yukselcanozdemir", "123456");
 		User user4 = new User(1, "Yüksel Can", "Özdemir", "yukselcanozdemir@gmail.com", "123");
 		User user5 = new User(1, "Yüksel Can", "Özdemir", "yukselcanozdemir@gmail.com", "123456");
-		User user6 = new User(2, "Osman Can", "Ates", "osmancan@gmail.com", "456789");
+		User user6 = new User(2, "Osman Can", "Ates", "osmancan@hotmail.com", "456789");
 		
-		User user7 = new User(1, "Yüksel Can2", "Özdemir2", "yukselcanozdemir@gmail.com", "444444");
+		User user7 = new User(1, "Ali", "Güneþ", "yukselcanozdemir@gmail.com", "444444");
 		
 		users= new ArrayList<String>();
 		userService.add(user);
@@ -46,8 +46,9 @@ public class Main {
 		System.out.println("--------- Giriþ Ýþlemleri ----------");
 		UserLoginService userLogin = new UserLoginManager(new DefaultAuthLogin());
 		UserLoginService userLogin2 = new UserLoginManager(new JGoogleAuthAdapter());
+		userLogin2.login("osmancan@hotmail.com", "456789");
 		userLogin2.login("yukselcanozdemir@gmail.com", "123456");
-		userLogin.login("osmancan@gmail.com", "456789");
+		userLogin.login("osmancan@hotmail.com", "456789");
 		
 	}
 
