@@ -1,7 +1,7 @@
 # Java-Camp
 Software developer training camp
 <!-- JAVA TEMELLERİ - 1-->
-<h2><a href="https://github.com/icanefrdogan/JavaReactKamp/tree/master/1%20-%20Java%20Temelleri%201">1. Java Temelleri - 1 </a></h2>
+<h2><a href="https://github.com/Yuksel-Can/Java-And-React-Camp/tree/main/javaCamp/lesson2">1. Java Temelleri - 1 </a></h2>
 
 <!-- JAVA TEMELLERİ - 2-->
 <h2><a href="https://github.com/icafnerdogan/JavaReactKamp/tree/master/2%20-%20Java%20Temelleri%202">2. Java Temelleri - 2 </a></h2>
